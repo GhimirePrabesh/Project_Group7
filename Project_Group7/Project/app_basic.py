@@ -2,9 +2,10 @@ from flask import Flask, render_template
 import sqlite3
 import pathlib 
 
-base_path = pathlib.Path(r'C:\Users\DELL\OneDrive\Desktop\Semister 1_DA\Python_DAB111\.venv\Group7_Project\Project_Group7\Project')
+
+current_directory = pathlib.Path(__file__).parent
 db_name = "supermarket.db"
-db_path = base_path / db_name
+db_path = current_directory / db_name
 print(db_path)
 
 app = Flask(__name__)
