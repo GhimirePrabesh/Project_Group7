@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head><title>About Our Supermarket</title>
+        <a href="{{ url_for('index') }}"><button>Homepage</button></a>
+        <a href="{{ url_for('data') }}"><button>Datasets</button></a>
+    <style>
+        h1{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: rgb(183, 223, 173);
+
+        }
+    </style>    
+    </head>
+
+    <body>
+        <h1>About Our Supermarket</h1>
+        <h2>Introduction to Dataset</h2>
+        <p>Source of dataset link: <a href="https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales">Dataset Link</a></p>
+        <p>The dataset has 13 columns, and the detail is provided in the section “The Description of Dataset”.</p>
+    
+        <h2>Description of Dataset</h2>
+        <p>Invoice id: Unique alphanumeric identifier for invoices, ensuring data integrity.</p>
+        <p>Branch: Categorical field for branch names where transactions occur, aiding in sales analysis.</p>
+        <p>City: Location of supercenters, categorized to understand regional sales trends.</p>
+        <p>Customer type: Categorizes customers as "Normal" or "Member," guiding marketing strategies.</p>
+        <p>Gender: Indicates customer gender as "Male" or "Female," valuable for demographic analysis.</p>
+        <p>Product line: Categorizes items for sales analysis and inventory management.</p>
+        <p>Unit price: Price of each product in dollars, crucial for revenue calculation.</p>
+        <p>Quantity: Number of products purchased per transaction, essential for inventory management.</p>
+        <p>Tax: Calculates 5% tax fee for purchases, ensuring financial compliance.</p>
+        <p>Total: Total transaction price including tax, vital for revenue analysis.</p>
+        <p>Time: Purchase time, aiding in understanding peak sales hours.</p>
+        <p>Payment: Mode of payment used, guiding payment processing and customer preferences.</p>
+        <p>COGS: Cost of goods sold, crucial for calculating profit margins.</p>
+    </body>    
+        
+</html>

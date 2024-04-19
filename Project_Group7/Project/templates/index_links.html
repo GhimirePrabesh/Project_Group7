@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Supermarket Sales of Myanmar</title>
+        <style>
+            button {
+              border: none;
+              color: rgb(7, 7, 7);
+              padding: 20px 32px;
+              text-align: center;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              border-radius: 50px;
+              text-align: center;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            div {
+                background-color: rgb(209, 101, 101);
+                width: 88%;
+                border: 10px solid rgb(104, 121, 104);
+                padding: 50px;
+                margin: 20px;
+            }
+
+            h1, a{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body style="background-color:rgba(116, 224, 143, 0.568);">
+        <div>
+        <h1>Welcome to our Supermarket!</h1>
+            <a href="{{ url_for('about') }}"><button>About Datasets</button></a>
+            <a href="{{ url_for('data') }}"><button>Datasets</button></a>
+        </div>
+        
+    </body>
+</html>
+
+

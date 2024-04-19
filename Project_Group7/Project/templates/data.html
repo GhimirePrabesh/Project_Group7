@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <a href="{{ url_for('index') }}"><button>Homepage</button></a>
+        <a href="{{ url_for('about') }}"><button>About Datasets</button></a>
+        <style>
+            table, th, td {
+              border: 1px solid rgb(252, 248, 248);
+              border-collapse: collapse;
+            }
+
+            th, td {
+                background-color: #bcecda;
+            }
+
+            h1{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: rgb(183, 223, 173);
+            }
+
+            </style>
+    </head>
+    <body>
+        <h1>Supermarket Sales</h1>
+    <body>
+        <table align="center" style="width: 100%" >
+            <thead>
+                <tr><th>ID</th>
+                    <th>Branch</th>
+                    <th>City</th>
+                    <th>Customer</th>
+                    <th>Gender</th>
+                    <th>Product line</th>
+                    <th>Unit price</th>
+                    <th>Quantity</th>
+                    <th>Tax (5%)</th>
+                    <th>Total</th>
+                    <th>Time</th>
+                    <th>Payment</th>
+                    <th>Cost of Goods Sold</th>
+                    
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for s in supermarkets_sales%}
+            <tr><td>{{ s[0] }}</td>
+                <td>{{ s[1] }}</td>
+                <td>{{ s[2] }}</td>
+                <td>{{ s[3] }}</td>
+                <td>{{ s[4] }}</td>
+                <td>{{ s[5] }}</td>
+                <td>{{ s[6] }}</td>
+                <td>{{ s[7] }}</td>
+                <td>{{ s[8] }}</td>
+                <td>{{ s[9] }}</td>
+                <td>{{ s[10] }}</td>
+                <td>{{ s[11] }}</td>
+                <td>{{ s[12] }}</td>
+                
+  
+            </tr>
+                {% endfor %}    
+            </tbody>
+        </table>
+    </body>
+</html>
+
